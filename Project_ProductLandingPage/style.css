@@ -1,0 +1,146 @@
+body{
+  background-color:#262626;
+  font-family: "Poppins";
+}
+
+#logo-div{
+  width:100%; 
+  background-color:rgb(26,26,26, 0.9);
+  position:fixed; /*fixa elemento no visor*/
+ 
+}
+
+#header-img {
+  width: 100px; 
+  filter:invert(100%);/*inverte cores*/
+ 
+}
+
+.nav-div{
+  position:fixed;
+  background-color:rgb(26,26,26, 0.9);
+  width:100%;
+  top:115px;
+}
+
+#links {
+  display: flex; /*alinhamento horizontal dos itens*/ 
+  justify-content: space-around; /*distribui os itens uniformemente no espaço*/  
+}
+
+.nav-link {
+  color:white;
+}
+
+#title{
+  margin-top:150px;
+  color:#0af; /*#0af*/
+  text-align:center;
+}
+
+#email{
+  display:block;
+  margin:auto;
+  width:220px;
+  padding:8px;
+  border:none;
+  background-color:#00AAFF;
+  font-size:15px;
+  transition:width .5s ease, background .5s ease;
+}
+
+#email::placeholder{
+  color:white;
+}
+
+#email:hover{
+  background-color:#FF5500;
+  width:300px;
+}
+
+#submit {
+  display:block;
+  margin:auto;
+  padding:8px;
+  border:none;
+  background-color:#00AAFF;
+  font-size:15px;
+  transition:background .5s ease;
+  color:white;
+}
+
+#submit:hover{
+  background-color:#FF5500;
+}
+
+#text{
+  width:60%;
+  margin:auto;
+  color:#00AAFF;
+  margin-top:100px;
+}
+
+#video{
+  margin:auto;
+  display:block;
+  margin-top:100px;
+  margin-bottom:100px;
+  background-color:#00AAFF;
+  padding:5px;
+}
+
+.flex-container{
+  display:flex; /*alinhamento horizontal dos itens*/
+  justify-content:center;/*distribui os itens no centro  */
+  /*text-align:center;/*alinha texto no centro*/
+}
+.produtos{
+  background-color:white;
+  margin:20px;
+  transition:box-shadow .3s ease;/*define a transição entre dois estados de um elemento, '.3s ease' define a velocidade de transição*/
+}
+.produtos:hover{/*executa a transição ao passar mouse sobre elemento*/
+  box-shadow:0px 0px 10px #FF5500 ; /*efeito de sombra com alteração de cor*/
+}
+.produto-nome{
+  padding:10px;/*distancia do conteudo até a borda*/
+  background-color:#00AAFF;
+  color:white;
+  text-align:center; /*alinha texto no centro*/
+}
+
+.produto-descricao{
+  color:#00AAFF;
+  text-align:center;/*alinha texto no centro*/
+}
+
+#produto-submit{
+  background-color:#00AAFF;
+  border:none; /*sem borda*/
+  width:100%;
+  color:white;
+ /* text-decoration:none;*/
+  font-size:20px;
+  padding:15px;
+  transition:background .5s ease;
+}
+#produto-submit:hover{
+  background-color:#FF5500;;
+}
+/*
+aplica estilo de acordo com largura da janela de visualização. Se for menor que 600px os blocos passam a se organizar em colunas. 
+
+
+@media screen and (max-width:600px){
+  .flex-container{
+    flex-direction:column;
+  }
+  .nav-link{
+    width:100%;
+    margin:auto;
+  }
+  .text{
+    width:400px;
+  }
+}
+*/
